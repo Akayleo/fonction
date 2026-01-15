@@ -505,6 +505,6 @@ body {
   .hero-content h1 { font-size: 2.5rem; }
   .audience-grid { grid-template-columns: 1fr; }
   .navbar .nav-links { display: none; }
-  .testimonial-content{width:600px}
+  .testimonial-content{width:32rm}
   .hero-btns button{ margin-bottom: 10px}
 }
