@@ -260,7 +260,7 @@ body {
 
 .testimonial-card-wrapper {
   flex: 1;
-  max-width: 600px;
+  max-width: 800px;
   overflow: hidden;
 }
 
@@ -505,6 +505,5 @@ body {
   .hero-content h1 { font-size: 2.5rem; }
   .audience-grid { grid-template-columns: 1fr; }
   .navbar .nav-links { display: none; }
-  .testimonial-content{ width: 16rem}
   .hero-btns button{ margin-bottom: 10px}
 }
