@@ -506,5 +506,5 @@ body {
   .audience-grid { grid-template-columns: 1fr; }
   .navbar .nav-links { display: none; }
   .hero-btns button{ margin-bottom: 10px}
-  .testimonial-card-wrapper {width:auto-fit}
+  .testimonial-card-wrapper {width:100%; padding: 0; }
 }
