@@ -65,12 +65,21 @@ const App = () => {
       {/* Navigation */}
       <nav className="navbar">
         <div className="logo">FONCTION</div>
-        <div className="nav-links">
-          <a href="#why-fonction">Features</a>
-          <a href="#vendors">Vendors</a>
-          <a href="#faq">FAQ</a>
-          <button className="nav-cta" onClick={() => openModal('vendor')}>Join Us</button>
-        </div>
+        <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </div>
+
+      {/* Navigation Links */}
+      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <a href="#why-fonction" onClick={toggleMenu}>Features</a>
+        <a href="#vendors" onClick={toggleMenu}>Vendors</a>
+        <a href="#faq" onClick={toggleMenu}>FAQ</a>
+        <button className="nav-cta" onClick={() => { openModal('vendor'); toggleMenu(); }}>
+          Join Us
+        </button>
+      </div>
       </nav>
 
       {/* Hero Section */}
