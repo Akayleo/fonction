@@ -70,11 +70,12 @@ const App = () => {
       {/* Navigation */}
       <nav className="navbar">
         <div className="logo">FONCTION</div>
+        
         <div className={`hamburger ${isOpen ? 'active' : ''}`} onClick={toggleMenu}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </div>
+         <span className="bar"></span>
+         <span className="bar"></span>
+         <span className="bar"></span>
+        </div>
 
       {/* Navigation Links */}
      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
