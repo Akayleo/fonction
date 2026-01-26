@@ -61,6 +61,10 @@ const App = () => {
     setShowModal(true);
   };
 
+  const toggleMenu = () => {
+  setIsOpen(!isOpen);
+};
+
   return (
     <div className="app-container">
       {/* Navigation */}
@@ -73,7 +77,7 @@ const App = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className={`nav-links ${isOpen ? 'open' : ''}`}>
+     <div className={`nav-links ${isOpen ? 'open' : ''}`}>
         <a href="#why-fonction" onClick={toggleMenu}>Features</a>
         <a href="#vendors" onClick={toggleMenu}>Vendors</a>
         <a href="#faq" onClick={toggleMenu}>FAQ</a>
