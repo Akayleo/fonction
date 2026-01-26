@@ -55,6 +55,7 @@ const App = () => {
     return () => clearInterval(timer);
   }, [currentTestimonial]);
 
+ const [isOpen, setIsOpen] = useState(false);
   const openModal = (type) => {
     setModalType(type);
     setShowModal(true);
